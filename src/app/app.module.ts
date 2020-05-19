@@ -10,6 +10,8 @@ import { AdminLayoutComponent } from "./layouts/admin-layout/admin-layout.compon
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import {AngularFireModule} from '@angular/fire';
+import {AngularFireStorageModule} from '@angular/fire/storage'
 
 import { AppRoutingModule } from "./app-routing.module";
 import { ComponentsModule } from "./components/components.module";
@@ -23,7 +25,14 @@ import { ComponentsModule } from "./components/components.module";
     NgbModule,
     RouterModule,
     AppRoutingModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    AngularFireModule.initializeApp({
+      apiKey: "AIzaSyBksoBbSVeHepI2OPd-KPWScEWTZV7SstM",
+      authDomain: "msangular-33d4e.firebaseapp.com",
+      projectId: "msangular-33d4e",
+      storageBucket: "msangular-33d4e.appspot.com"
+    }),
+    AngularFireStorageModule
   ],
   declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent],
   providers: [],

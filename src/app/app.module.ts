@@ -27,12 +27,12 @@ import { ComponentsModule } from "./components/components.module";
     AppRoutingModule,
     ToastrModule.forRoot(),
     AngularFireModule.initializeApp({
-      apiKey: "AIzaSyBksoBbSVeHepI2OPd-KPWScEWTZV7SstM",
-      authDomain: "msangular-33d4e.firebaseapp.com",
-      projectId: "msangular-33d4e",
-      storageBucket: "msangular-33d4e.appspot.com"
-    }),
-    AngularFireStorageModule
+        apiKey: "AIzaSyBksoBbSVeHepI2OPd-KPWScEWTZV7SstM",
+        authDomain: "msangular-33d4e.firebaseapp.com",
+        projectId: "msangular-33d4e",
+        storageBucket: "msangular-33d4e.appspot.com"
+      }),
+      AngularFireStorageModule
   ],
   declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent],
   providers: [],

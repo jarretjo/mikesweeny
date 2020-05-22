@@ -19,7 +19,7 @@ export const ROUTES: RouteInfo[] = [
     path: "/gallery",
     title: "Gallery",
     rtlTitle: "الرموز",
-    icon: "icon-atom",
+    icon: "icon-pin",
     class: ""
   },
 
